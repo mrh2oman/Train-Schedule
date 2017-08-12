@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Train Schedule</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+
+<body>
+
+
+  <div>
+    <h1>Train Schedule</h1>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+
+
+
+
+      <table class="train-schedule">
+        <tr>
+          <th>Train Name
+          </th>
+          <th>Destination
+          </th>
+          <th>Interval in Minutes
+          </th>
+          <th>Next Arrival
+          </th>
+          <th>Minutes Away
+          </th>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Sign-Up Panel-->
+      <div class="col-s10">
+        <div>
+          <div>
+            <h3>Add Train</h3>
+          </div>
+          <div>
+
+            <form>
+              <div>
+                <label>Train Name</label>
+                <input type="text" class="form-control" id="trainName">
+              </div>
+              <div>
+                <label>Destination</label>
+                <input type="text" class="form-control" id="trainLocation">
+              </div>
+              <div>
+                <label>First Train Time</label>
+                <input type="text" class="form-control" id="startTime">
+              </div>
+              <div>
+                <label>Interval in Minutes</label>
+                <input type="number" class="form-control" id="intervalTrain">
+              </div>
+              <button type="submit" class="" id="add-train">Submit</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
